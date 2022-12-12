@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const colaboradores_controller_1 = require("../controllers/colaboradores.controller");
+const router = (0, express_1.Router)();
+router.get("/colaboradores", colaboradores_controller_1.getColaboradores);
+router.get("/colaboradores/count", colaboradores_controller_1.getColaboradoresCount);
+router.post("/colaboradores", colaboradores_controller_1.saveColaborador);
+router.get("/colaboradores/:id", colaboradores_controller_1.getColaborador);
+router.delete("/colaboradores/:id", colaboradores_controller_1.deleteColaborador);
+router.put("/colaboradores/:id", colaboradores_controller_1.updateColaborador);
+exports.default = router;

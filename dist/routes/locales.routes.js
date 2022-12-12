@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const locales_controller_1 = require("../controllers/locales.controller");
+const router = (0, express_1.Router)();
+router.get("/locales", locales_controller_1.getLocales);
+router.get("/locales/count", locales_controller_1.getLocalesCount);
+router.post("/locales", locales_controller_1.saveLocal);
+router.get("/locales/:id", locales_controller_1.getLocal);
+router.delete("/locales/:id", locales_controller_1.deleteLocal);
+router.put("/locales/:id", locales_controller_1.updateLocal);
+exports.default = router;
