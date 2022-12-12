@@ -8,8 +8,16 @@ export const DB_PASSWORD = process.env.DB_PASSWORD || "Seguridad2021";
 export const DB_DATABASE = process.env.DB_DATABASE || "u524788796_security"; */
 
 export const PORT = process.env.PORT || 3000;
+export const DB_HOST =
+  process.env.DB_HOST || "containers-us-west-155.railway.app";
+export const DB_USER = process.env.DB_USER || "root";
+export const DB_PASSWORD = process.env.DB_PASSWORD || "4vkPnT7FJa6Mpd4nLeeJ$1";
+export const DB_DATABASE = process.env.DB_DATABASE || "railway";
+export const DB_PORT = process.env.DB_PORT || 3306;
+
+/* export const PORT = process.env.PORT || 3000;
 export const DB_HOST = process.env.DB_HOST || "localhost";
 export const DB_USER = process.env.DB_USER || "nicolas";
 export const DB_PASSWORD = process.env.DB_PASSWORD || "pedro2022$1";
 export const DB_DATABASE = process.env.DB_DATABASE || "security";
-export const DB_PORT = process.env.DB_PORT || 3306;
+export const DB_PORT = process.env.DB_PORT || 3306; */
