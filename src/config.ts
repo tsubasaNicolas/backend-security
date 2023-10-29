@@ -11,7 +11,7 @@ export const PORT = process.env.PORT || 3000;
 export const DB_HOST =
   process.env.DB_HOST || "containers-us-west-155.railway.app";
 export const DB_USER = process.env.DB_USER || "root";
-export const DB_PASSWORD = process.env.DB_PASSWORD || "4vkPnT7FJa6Mpd4nLeeJ";
+export const DB_PASSWORD = process.env.DB_PASSWORD || "dq5LFjsscRwDQ7ZGzqW2";
 export const DB_DATABASE = process.env.DB_DATABASE || "railway";
 export const DB_PORT = Number(process.env.DB_PORT) || 7555;
 
