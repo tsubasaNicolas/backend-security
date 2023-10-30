@@ -17,7 +17,12 @@ app.set("port", PORT);
 
 app.use(morgan("dev"));
 
-app.use(cors());
+app.use(cors({
+    origin: "*", // Permitir todos los orígenes
+    methods: "GET,POST", // Especificar los métodos permitidos
+  }));
+  
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
