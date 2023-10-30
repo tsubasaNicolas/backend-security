@@ -5,6 +5,7 @@ import { PORT } from "./config";
 
 import employeesRoutes from "./routes/employees.routes";
 import tasksRoutes from "./routes/tasks.routes";
+import donna from "./routes/donna.routes";
 import colaboradoresRoutes from "./routes/colaboradores.routes";
 import localesRoutes from "./routes/locales.routes";
 import controlColaboradores from "./routes/controlColaboradores.routes";
@@ -26,5 +27,6 @@ app.use(colaboradoresRoutes);
 app.use(localesRoutes);
 app.use(controlColaboradores);
 app.use(controlLocales);
+app.use(donna);
 
 export default app;
